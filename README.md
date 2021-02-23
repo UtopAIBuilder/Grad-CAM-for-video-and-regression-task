@@ -16,3 +16,4 @@ Given a set of images captured from the camera of a mov-
 ing vehicle, we need to predict the ego-motion. In this task,
 we take gradient of the negative of the regression loss with
 respect to the activation maps of the last layer.
+For further details see the report
