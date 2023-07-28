@@ -14,3 +14,9 @@ Given a set of images captured from the camera of a moving vehicle, we need to p
 we take gradient of the negative of the regression loss with
 respect to the activation maps of the last layer.
 For further details see the report
+
+## Instructions to run the code for LSTM using Attention grad cam:
+- Dataset of video should be organized in this structure: ./data/hmdb51_org/swing_baseball/xyx.avi (swing_baseball contains a set of videos having the label swing_baseball)
+- First run DataPrepLSTMConv.ipynb. This will sample 16 frames from each video and will create directory in this way: ./data/hmdb51_jpg/swing_baseball/xyx/*.jpg.
+- Once this is done, run LSTMConvMainWithAttention.ipynb to train and save a model checkpoint to be later used for GradCam inference.
+- After this run GradCamWithAttention.ipynb to get the final output
