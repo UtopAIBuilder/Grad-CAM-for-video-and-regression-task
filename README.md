@@ -16,6 +16,10 @@ respect to the activation maps of the last layer.
 For further details see the report
 
 ## Instructions to run the code for LSTM using Attention grad cam:
+Sample dataset is available at: https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/#Downloads
+click on the highlighted part:
+![image](https://github.com/UtopAIBuilder/Grad-CAM-for-video-and-regression-task/assets/18072434/34988e6c-08a5-47ad-bb7e-9b213dbcf2ab)
+
 - Dataset of video should be organized in this structure: ./data/hmdb51_org/swing_baseball/xyx.avi (swing_baseball contains a set of videos having the label swing_baseball)
 - First run DataPrepLSTMConv.ipynb. This will sample 16 frames from each video and will create directory in this way: ./data/hmdb51_jpg/swing_baseball/xyx/*.jpg.
 - Once this is done, run LSTMConvMainWithAttention.ipynb to train and save a model checkpoint to be later used for GradCam inference.
